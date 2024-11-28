@@ -46,3 +46,31 @@ img{
   padding: 15px;
 }
 
+.form-input{
+  padding-bottom: 15px;
+}
+
+form{
+  padding-left: 40px;
+  padding-top: 50px;
+  background-color: rgba(22, 21, 21, 0.977);
+  border-radius: 25px;
+}
+
+.registrati{
+  width: 100%;
+}
+
+input {
+  border-radius: 12px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.form-container {
+  margin: 0 auto;
+  max-width: 1720px;
+}
+
