@@ -57,7 +57,7 @@ const addNewCards = (member) => {
 
 const cicleMembers = (members) => {
 
-  let cardsMember;
+  let cardsMember = '';
   
   for (let member of members){
 
