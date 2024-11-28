@@ -31,3 +31,18 @@ header p {
   font-size: 20px;
 }
 
+.card {
+  width: 550px;
+  display: flex;
+  flex-direction: row;
+}
+
+img{
+  width: 30%;
+}
+
+.text{
+  width: 70%;
+  padding: 15px;
+}
+

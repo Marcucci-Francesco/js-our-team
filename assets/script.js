@@ -40,34 +40,31 @@ const teamMembers = [
 
 const addNewCards = (member) => {
 
-  const {name, role, email, img} = teamMembers
+  const {name, role, email, img} = member
 
-  return `<div class="col-4 pb-3">
-          <div class="row">
-            <div class="col-4">
-              <img src="${img}" alt="">
-            </div>
-            <div class="col-8 p-4 bg-black text-white">
-              <h2>${name}</h2>
-              <p class="text-card">${role}</p>
-              <p class="text-primary text-card">${email}</p>
-            </div>
-          </div>
-        </div>`
-
+  return `
+  <div class="card">
+    <img src="assets/${img}" alt="">
+    <div class="text bg-black text-white">
+      <h3>${name}</h3>
+      <p class="text-card">${role}</p>
+      <p class="text-primary text-card">${email}</p>
+    </div>
+  </div>
+  `
 }
 
 
-const cicleMembers = (teamMembers) => {
+const cicleMembers = (members) => {
 
   let cardsMember;
+  
+  for (let member of members){
 
-  for (let member of teamMembers){
-
-    cardsMember += cicleMembers(member);
+    cardsMember += addNewCards(member);
   }
 
-  document.querySelector('.card').innerHTML = cardsMember
+  document.querySelector('.contain').innerHTML = cardsMember
 }
 
-cicleMembers(addNewCards)
+cicleMembers(teamMembers)
