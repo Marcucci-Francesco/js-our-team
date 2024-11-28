@@ -9,6 +9,7 @@
 .fm-container {
   margin: 0 auto;
   max-width: 1800px;
+  padding-left: 55px;
 }
 
 header {
