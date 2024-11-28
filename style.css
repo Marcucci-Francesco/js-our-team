@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* header  */
+
+.fm-container {
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+header {
+  margin-top: 50px;
+}
+
+h1 {
+  padding-bottom: 40px;
+  font-size: 55px;
+}
+
+header p {
+  font-size: 26px;
+  padding-bottom: 60px;
+}
+
+/* main  */
+
+.text-card {
+  font-size: 20px;
+}
+
