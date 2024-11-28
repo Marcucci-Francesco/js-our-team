@@ -36,3 +36,38 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+const addNewCards = (member) => {
+
+  const {name, role, email, img} = teamMembers
+
+  return `<div class="col-4 pb-3">
+          <div class="row">
+            <div class="col-4">
+              <img src="${img}" alt="">
+            </div>
+            <div class="col-8 p-4 bg-black text-white">
+              <h2>${name}</h2>
+              <p class="text-card">${role}</p>
+              <p class="text-primary text-card">${email}</p>
+            </div>
+          </div>
+        </div>`
+
+}
+
+
+const cicleMembers = (teamMembers) => {
+
+  let cardsMember;
+
+  for (let member of teamMembers){
+
+    cardsMember += cicleMembers(member);
+  }
+
+  document.querySelector('.card').innerHTML = cardsMember
+}
+
+cicleMembers(addNewCards)
